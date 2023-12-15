@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Header} from "./component/header/Header.tsx";
+
 import {Form} from "./component/form/Form.tsx";
 import {TaskList} from "./component/tasklist/TaskList.tsx";
 import {TaskProvider} from "./context/task-context.tsx";
@@ -11,6 +11,7 @@ import {auth} from "./firebase.ts";
 import { onAuthStateChanged } from 'firebase/auth';
 import {SignIn} from "./component/signin/SignIn.tsx";
 import {Loader} from "./component/loader/Loader.tsx";
+import {Header} from "./component/header/Header.tsx";
 
 function App() {
     const [loader, setLoader] = useState(true);
