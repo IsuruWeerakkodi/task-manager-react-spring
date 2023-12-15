@@ -13,10 +13,9 @@ export function Form() {
 
     return (
         <form onSubmit={handleSubmit} className="d-flex flex-row gap-2 border-bottom p-2">
-            <input
-                ref={txtRef}
-                value={value}
-                type="text" className="form-control" placeholder="Enter task to add..."/>
+            <div className="input-group ">
+                <input type="text" className="form-control" placeholder="Enter task to add..." aria-label="Username" aria-describedby="basic-addon1"/>
+            </div>
             <button className="btn btn-primary rounded-4 ">Add Task</button>
             </form>
     );

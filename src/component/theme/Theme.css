@@ -5,11 +5,11 @@
 
 .Theme:hover {
     cursor: pointer;
-    background-color: #ece6e6;
+    background-color: transparent;
     border-color: red !important;
     color: red;
 }
-html[data-bs-theme="dark"] .theme.hover {
+html[data-bs-theme="dark"] .Theme.hover {
     border-color: lightseagreen !important;
     color: lightseagreen;
 }
