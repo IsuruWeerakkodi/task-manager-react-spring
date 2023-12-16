@@ -10,7 +10,6 @@ App is developed using,
 
 - [Overview of technologies used](#overview-of-technologies-used)
 - [Installation](#installation)
-- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
 - [Copyright](#copyright)
