@@ -37,13 +37,13 @@ function App() {
             :           // else
 
             user ?  // if (user)
-                (<>
+                <>
                     <Header/>
                     <TaskProvider>
-                        <Form/>
-                        <TaskList/>
+                    <Form/>
+                    <TaskList/>
                     </TaskProvider>
-                </>)
+                </>
                 :       // else
                 <SignIn/>
         }

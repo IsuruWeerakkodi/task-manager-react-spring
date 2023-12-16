@@ -1,10 +1,8 @@
-// @ts-ignore
-
 import './Task.css';
 import React, {useId, useRef, useState} from "react";
-import {TaskDTO} from "../../dto/TaskDTO.ts";
 import {deleteTask, updateTask} from "../../services/task-services.tsx";
 import {useTaskDispatcher} from "../../context/task-context.tsx";
+import {TaskDTO} from "../../dto/TaskDTO.tsx";
 export function Task(task: TaskDTO) {
     const id = useId();
     const taskDispatcher = useTaskDispatcher();

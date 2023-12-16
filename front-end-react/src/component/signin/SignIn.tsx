@@ -1,22 +1,24 @@
 import './SignIn.css';
-import React, {useRef, useState} from "react";
+import {signInWithPopup, GoogleAuthProvider}
+    from 'firebase/auth';
+import {auth} from "../../firebase.ts";
+
 export function SignIn() {
 
-    const txtRef = useRef<HTMLInputElement>(null);
-    const [value, setValue] = useState("")
-    function handleSubmit(e: React.FormEvent){
-        e.preventDefault();
-        if (!value.trim()) return;
-
-
+    function handleSignIn(){
+        signInWithPopup(auth, new GoogleAuthProvider());
     }
 
     return (
-        <form onSubmit={handleSubmit} className="d-flex flex-row gap-2 border-bottom p-2">
-            <div className="input-group ">
-                <input type="text" className="form-control" placeholder="Enter task to add..." aria-label="Username" aria-describedby="basic-addon1"/>
-            </div>
-            <button className="btn btn-primary rounded-4 ">Add Task</button>
-            </form>
+        <div className="d-flex vh-100 flex-column gap-2
+            align-items-center justify-content-center">
+            <i className="bi bi-clipboard-check-fill p-2 px-3 fs-1 border border-2 rounded-5 border-primary-subtle"></i>
+            <h1>Welcome to Task Manager App</h1>
+            <button onClick={handleSignIn}
+                    className="btn btn-primary">
+                <i className="bi bi-google pe-2"></i>
+                Sign In with Google
+            </button>
+        </div>
     );
 }
