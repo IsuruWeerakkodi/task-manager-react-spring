@@ -29,10 +29,10 @@ public class TaskHttpController {
 
     public TaskHttpController() {
         HikariConfig config = new HikariConfig();
-        config.setUsername("postgres");
-        config.setPassword("postgres");
-        config.setJdbcUrl("jdbc:postgresql://localhost:15000/dep11_todo_app");
-        config.setDriverClassName("org.postgresql.Driver");
+        config.setUsername("root");
+        config.setPassword("mysql");
+        config.setJdbcUrl("jdbc:mysql://localhost:3306/task_manager");
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.addDataSourceProperty("maximumPoolSize", 10);
         pool = new HikariDataSource(config);
     }
