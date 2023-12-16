@@ -18,10 +18,10 @@ App is developed using,
 
 ### Frontend:
 
-- React: JavaScript library for building user interfaces.
-- Vite: JavaScript bundler for building modern web applications.
+- React: TypeScript library for building user interfaces.
+- Vite: TypeScript bundler for building modern web applications.
 - Firebase: Google's platform for authentication, database, and other functionalities.
-- JavaScript: Programming language for frontend development.
+- TypeScript: Programming language for frontend development.
 - firebase.json: Configuration file for Firebase integration.
 - 404.html: Custom error page for non-existent routes.
 - node_modules: Directory for frontend dependencies.
@@ -32,7 +32,7 @@ App is developed using,
 
 ### Backend:
 
-- Spring Boot: Java framework for building web applications.
+- Spring: Java framework for building web applications.
 - RESTful API: Architectural style for web APIs.
 - CorsFilter: Spring filter for handling Cross-Origin Resource Sharing.
 - Java: Programming language for backend development.
